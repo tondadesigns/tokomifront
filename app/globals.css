@@ -1,63 +1,47 @@
 @import "tailwindcss";
 
-html, body {
-      margin: 0;
-      padding: 0;
-      background: black;
-      overflow: hidden;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+@layer base {
+    html, body {
+        @apply m-0 p-0 bg-black overflow-hidden h-screen;
     }
-
-    .intro-container {
-      animation: backgroundChange 3s forwards ease-in-out;
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    body {
+        @apply flex items-center justify-center;
     }
+}
 
-    .logo-letter {
-      color: white;
-      font-size: 4px;
-      font-weight: 600;
-      font-family: 'Space Grotesk', sans-serif;
-      opacity: 0.8;
-      animation: zoomIn 3s forwards ease-in-out, colorChange 3s forwards ease-in-out;
-    }
+@theme {
+    --font-tokomi: "Space_Grotesk", sans-serif;
+}
 
-    @keyframes zoomIn {
-      0% {
+@keyframes zoomIn {
+    0% {
         font-size: 4px;
         opacity: 0.4;
         transform: scale(1);
-      }
-      50% {
+    }
+    50% {
         opacity: 1;
-      }
-      100% {
+    }
+    100% {
         font-size: 120px;
         transform: scale(1.5);
-      }
     }
+}
 
-    @keyframes backgroundChange {
-      0% {
+@keyframes backgroundChange {
+    0% {
         background: black;
-      }
-      100% {
+    }
+    100% {
         background: white;
-      }
     }
+}
 
-    @keyframes colorChange {
-      0% {
+@keyframes colorChange {
+    0% {
         color: white;
-      }
-      100% {
-        color: black;
-      }
     }
+    100% {
+        color: black;
+    }
+}
