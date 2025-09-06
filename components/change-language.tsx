@@ -1,5 +1,6 @@
-import React from "react";
-export default function ChangeLanguage() {
+
+
+export const ChangeLanguage = () => {
   function changeLanguage() {}
 
   return (
