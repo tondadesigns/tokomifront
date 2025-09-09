@@ -1,0 +1,59 @@
+        html, body {
+          margin: 0;
+          padding: 0;
+          height: 100vh;
+          font-family: 'Space Grotesk', sans-serif;
+          overflow: hidden;
+          background-color: #000;
+        }
+        .language-toggle {
+          position: absolute;
+          top: 80px;
+          right: 60px;
+          z-index: 1000;
+          font-family: 'Space Grotesk', sans-serif;
+        }
+        .language-toggle select {
+          padding: 4px 8px;
+          font-size: 26px;
+          font-weight: 500;
+          color: #000;
+          border: 1px solid #ccc;
+          border-radius: 0;
+          background-color: white;
+          cursor: pointer;
+        }
+        .background { position: absolute; color: #000; inset: 0; z-index: 1; }
+        .overlay { position: absolute; inset: 0; background-color: #000; z-index: 2; }
+        .content {
+          position: relative; z-index: 3; color: white; display: flex; flex-direction: column;
+          align-items: center; justify-content: center; height: 100vh; text-align: center; padding: 0 24px;
+        }
+        .content h1 {
+          font-family: 'Space Grotesk', sans-serif;
+          font-size: 28px;
+          font-weight: 500;
+          margin-bottom: 24px;
+          text-transform: uppercase;
+        }
+        .content button {
+          background: white;
+          color: black;
+          font-family: 'Space Grotesk', sans-serif;
+          font-size: 22px;
+          font-weight: 500;
+          text-transform: uppercase;
+          padding: 20px 28px;
+          border: none;
+          border-radius: 0;
+          cursor: pointer;
+          margin: 8px 0;
+          width: 60%;
+          transition: background 0.3s ease;
+        }
+        .content button:hover {
+          background: black;
+          color: white;
+          border: 1px solid white;
+        }
+    
