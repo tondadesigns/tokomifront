@@ -26,7 +26,7 @@ const SHOES_NEW: Product[] = [
 function ProductCard({ p }: { p: Product }) {
   return (
     <Link href={`/product/${p.slug}`} className="product-card">
-      {/* On peut garder <img> si tu préfères exactement le rendu natif */}
+     
       <img src={p.image} alt={p.name} />
       <div className="brand">{p.brand}</div>
       <div className="product-name">{p.name}</div>
