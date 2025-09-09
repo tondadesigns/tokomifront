@@ -1,0 +1,128 @@
+        html, body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Space Grotesk', sans-serif;
+          text-transform: uppercase;
+          background-color: #fff;
+          height: 100vh;
+          display: flex;
+        }
+        .btn-retour {
+          position: absolute;
+          left: 44px;
+          top: 104px;
+          background: none;
+          border: none;
+          font-size: 30px;
+          font-weight: 300;
+          color: black;
+          cursor: pointer;
+          font-family: 'Space Grotesk', sans-serif;
+        }
+        .page-container {
+          max-width: 460px;
+          width: 100%;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: row;
+          height: 100vh;
+        }
+        .form-container, .social-container { margin-left: 122px; }
+        .form-container {
+          flex: 1;
+          padding: 64px 48px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .form-container h2 {
+          font-size: 32px;
+          font-weight: 600;
+          text-transform: uppercase;
+          margin-bottom: 82px;
+        }
+        .form-group {
+          font-size: 32px;
+          margin-bottom: 16px;
+          display: flex;
+          flex-direction: column;
+        }
+        .form-group label {
+          font-size: 30px;
+          font-weight: 300;
+          margin-bottom: 4px;
+        }
+        .form-group input {
+          padding: 8px 0;
+          font-family: 'Space Grotesk', sans-serif;
+          font-size: 32px;
+          font-weight: 300;
+          text-transform: uppercase;
+          margin-bottom: 1px;
+          border: none !important;
+          border-bottom: 1px solid #eee !important;
+          border-top: transparent; border-left: transparent; border-right: transparent;
+          border-radius: 0;
+          outline: none;
+        }
+        .submit-btn {
+          margin-top: 24px;
+          padding: 20px 40px;
+          font-size: 32px;
+          font-weight: 300 !important;
+          text-transform: uppercase;
+          background-color: black;
+          color: white;
+          border: none;
+          border-radius: 0;
+          cursor: pointer;
+          width: 100%;
+        }
+        .submit-btn:hover { font-weight: 300; background-color: #333; }
+        .social-container {
+          flex: 1;
+          padding: 64px 48px;
+          background-color: #fff;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .social-container h3 {
+          font-size: 32px;
+          font-weight: 600;
+          margin-bottom: 16px;
+          margin-left: -204px;
+        }
+        .social-button {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          background-color: white;
+          border: none !important;
+          border-bottom: 1px solid #eee !important;
+          border-radius: 0;
+          padding: 10px 20px;
+          width: 260px;
+          margin: 8px 0;
+          font-size: 30px;
+          font-weight: 300;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: background .3s ease;
+          color: black;
+        }
+        .social-button:hover { background-color: #f0f0f0; }
+        .social-button img { background: white; height: 24px; width: 24px; margin-right: 12px; }
+        .social-button.apple img { width: 64px; height: 44px; margin-left: -12px; margin-bottom: 2px; }
+        .social-button.google img { margin-left: -2px; width: 46px; height: 38px; }
+        .social-button.facebook img { width: 44px; height: 40px; }
+        .modal-overlay {
+          position: fixed; inset: 0; background-color: rgba(0,0,0,.6);
+          display: flex; justify-content: center; align-items: flex-end; z-index: 999;
+        }
+        .modal-content {
+          background-color: white; font-size: 28px; font-weight: 300; width: 100%;
+          border-radius: 0; padding: 24px; text-align: center; animation: slideUp .4s ease forwards;
+        }
+        @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
