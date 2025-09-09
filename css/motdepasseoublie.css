@@ -1,0 +1,87 @@
+        html, body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Space Grotesk', sans-serif;
+          background-color: #fff;
+          color: #111;
+          height: 100svh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+        }
+        .btn-retour {
+          position: absolute;
+          left: 44px;
+          top: 104px;
+          background: none;
+          border: none;
+          font-size: 28px;
+          font-weight: 300;
+          color: black;
+          cursor: pointer;
+          font-family: 'Space Grotesk', sans-serif;
+        }
+        .forgot-container {
+          transform: translateY(-6vh);
+          transition: transform .25s ease;
+          width: 100%;
+          max-width: 420px;
+          padding: 32px;
+          text-align: left;
+        }
+        @media (max-width: 600px) {
+          .forgot-container { transform: translateY(-4vh); }
+        }
+        h2 {
+          font-size: 30px;
+          font-weight: 600;
+          margin-bottom: 24px;
+          text-transform: uppercase;
+          text-align: center;
+        }
+        .hint {
+          font-size: 16px;
+          font-weight: 300;
+          color: #444;
+          margin-bottom: 18px;
+        }
+        .form-group {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 16px;
+        }
+        .form-group label {
+          font-size: 20px;
+          color: grey;
+          margin-bottom: 6px;
+          font-weight: 300;
+          text-transform: uppercase;
+        }
+        .form-group input {
+          padding: 6px 2px;
+          font-size: 20px;
+          font-weight: 300;
+          border: none;
+          border-bottom: 1px solid #ccc;
+          border-radius: 0;
+          outline: none;
+          font-family: 'Space Grotesk', sans-serif;
+          text-transform: uppercase;
+        }
+        .submit-btn {
+          margin-top: 24px;
+          padding: 16px;
+          font-family: 'Space Grotesk', sans-serif;
+          font-size: 22px;
+          font-weight: 200;
+          text-transform: uppercase;
+          background-color: black;
+          color: white;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          transition: background 0.3s ease;
+        }
+        .submit-btn:hover { background-color: #333; }
+    
