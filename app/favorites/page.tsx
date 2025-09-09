@@ -248,31 +248,7 @@ export default function FavoritesPage() {
           RETOUR
         </button>
 
-        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          {selectionMode ? (
-            <>
-              <button
-                className="btn-back"
-                id="menuToggle"
-                onClick={selectAllOrNone}
-              >
-                {selectedKeys.size === allKeys.length && allKeys.length > 0
-                  ? `TOUT DÉSÉLECTIONNER (${selectedKeys.size})`
-                  : `TOUT SÉLECTIONNER (${selectedKeys.size})`}
-              </button>
-              <span
-                className="btn-cancel"
-                onClick={toggleSelectionMode}
-                style={{
-                  fontSize: 12,
-                  fontWeight: 300,
-                  cursor: "pointer",
-                  marginTop: 36,
-                }}
-              >
-                ANNULER
-              </span>
-            </>
+  
           ) : (
             <button className="btn-back" id="menuToggle" onClick={toggleSelectionMode}>
               SÉLECTIONNER
