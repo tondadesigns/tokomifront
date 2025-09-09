@@ -1,0 +1,95 @@
+
+        html, body { margin:0; padding:0; }
+        body {
+          font-family: 'Space Grotesk', sans-serif;
+          background-color: #fff;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+        }
+        .header {
+          display:flex; justify-content:space-between; align-items:center; padding:16px; border-bottom:none;
+        }
+        .btn-retour {
+          margin-top:39px; margin-left:-6px; font-size:12px; font-weight:300; color:black; background:none; border:none; cursor:pointer;
+        }
+        .btn-back {
+          background:white; color:black; border:none; padding:6px 12px; font-size:12px; cursor:pointer; font-weight:300;
+        }
+        .btn-back:hover { background:black; color:white; }
+        .btn-cancel{ margin-top:36px; }
+
+        .tabs { display:flex; justify-content:flex-start; gap:34.5px; margin:1px 0 46px; padding-left:16px; }
+        .tabs span, .tabs .tab-link { font-size:12px; font-weight:300; cursor:pointer; text-decoration:none; color:black; }
+        .tabs .active { font-weight:700; }
+
+        .fav-row { display:flex; align-items:flex-start; gap:24px; padding:16px; }
+        .fav-row.product { display:flex !important; flex-direction:row !important; align-items:flex-start !important; gap:24px; padding:16px; }
+        .fav-image {
+          flex:0 0 175px; width:175px; height:260px; background-size:cover; background-position:center; background-color:#ddd; border:none; margin-top:-12px; cursor:pointer;
+        }
+        .fav-info { margin-top:-14px; flex:1; display:flex; flex-direction:column; justify-content:space-between; text-transform:uppercase; margin-bottom:32px; }
+        .fav-info .brand { font-size:12px; font-weight:300; }
+        .fav-info .product-name { font-size:12px; font-weight:300; }
+        .fav-info .price { font-size:13px; font-weight:300; }
+
+        .shopping-bin { margin-top:120px; margin-left:-8px; display:flex; gap:0 4px; flex-wrap:wrap; }
+        .shopping-btn { font-size:12px; font-weight:300; border:none; background:none; color:black; padding:8px 8px; cursor:pointer; margin-top:0; line-height:.7; }
+
+        .selection-radio { position:absolute; bottom:12px; right:12px; display:block; z-index:5; cursor:pointer; }
+        .selection-radio input { display:none; }
+        .custom-check {
+          display:inline-block; width:12px; height:12px; border-radius:50%;
+          background:#fff; box-shadow: inset 0 0 0 2px #c4c4c4, 0 1px 2px rgba(0,0,0,0.1); position:relative;
+        }
+        .selection-radio input:checked + .custom-check {
+          background: radial-gradient(circle at center, white 30%, #007AFF 31%, #007AFF 100%);
+          box-shadow: 0 0 3px rgba(0,122,255,.4);
+        }
+
+        .selection-actions {
+          position:fixed; bottom:60px; left:50%; transform:translateX(-50%); display:flex; z-index:1000; font-weight:300; gap:8px;
+        }
+        .selection-actions button {
+          background-color:black; border:1px solid #ccc; padding:12px 20px; min-width:200px; font-size:12px; font-weight:300; color:white; cursor:pointer; height:40px;
+        }
+        .empty-message { text-align:center; font-size:12px; font-weight:300; color:#999; margin-top:140px; }
+
+        .sticky-footer { position:fixed; bottom:0; left:0; width:100%; background:white; display:flex; justify-content:space-around; padding:10px 0; border-top:1px solid #ccc; z-index:10; }
+        .menu-item { display:flex; flex-direction:column; align-items:center; font-size:10px; color:#666; text-decoration:none; }
+        .menu-item:hover, .menu-item.active { color:#000; font-weight:600; }
+
+        /* Modal confirmation */
+        .modal-backdrop { position:fixed; inset:0; background:rgba(0,0,0,.4); z-index:10000; display:flex; align-items:center; justify-content:center; }
+        .modal-card { background:white; padding:24px 20px; width:80%; max-width:320px; text-align:center; }
+        .confirm-text { font-size:12px; margin-bottom:24px; font-weight:300; text-transform:uppercase; }
+        .confirm-actions { display:flex; gap:12px; }
+        .btn-cancel-ghost { flex:1; padding:10px; border:none; background:#ccc; color:black; font-size:12px; font-weight:300; text-transform:uppercase; cursor:pointer; }
+        .btn-delete-solid { flex:1; padding:10px; border:none; background:black; color:white; font-size:12px; font-weight:300; text-transform:uppercase; cursor:pointer; }
+
+        /* Modal listes (bas d’écran) */
+        .liste-dropdown { position:fixed; inset:0; background:rgba(0,0,0,.4); display:flex; justify-content:center; align-items:flex-end; z-index:999; }
+        .liste-dropdown-content { background:white; width:100%; padding:32px 0; text-align:center; animation:slideUp .3s ease; }
+        @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+        .liste-header { position:relative; text-align:center; padding:0 16px; color:grey; }
+        .liste-header h4 { font-size:12px; font-weight:300; margin:20px 0 0; text-transform:uppercase; letter-spacing:.05em; }
+        .liste-close { position:absolute; right:16px; top:50%; transform:translateY(-50%); border:none; background:none; font-size:12px; font-weight:300; color:black; cursor:pointer; margin-top:-30px; }
+        .liste-items { padding:8px 2px; max-height:48vh; overflow:auto; }
+        .list-card-item { text-transform:uppercase; margin:8px 0; padding-left:10px; font-size:12px; font-weight:300; cursor:pointer; }
+        .list-card-item:hover { background:#fafafa; }
+        .list-meta { font-size:11px; opacity:.6; }
+        .liste-footer { border-top:1px solid #eee; padding:8px 4px 4px 4px; text-align:right; margin-right:20px; }
+        .liste-manage { font-size:12px; color:#111; text-decoration:underline; }
+
+        /* Modal création liste (centre) */
+        .modal { position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,.6); display:flex; align-items:center; justify-content:center; z-index:9999; }
+        .modal.show { display:flex !important; }
+        .create-list-form-wrapper { position:relative; display:flex; flex-direction:column; background:white; padding:24px; width:80%; max-width:320px; border-radius:0; align-items:center; justify-content:center; }
+        .create-list-form { display:flex; flex-direction:column; padding:32px 16px; margin-bottom:32px; }
+        .create-list-form input { width:100%; padding:10px; margin-bottom:12px; font-size:12px; font-weight:300; border:none; border-bottom:1px solid #eee; text-transform:uppercase; outline:none; }
+        .create-list-form button { padding:10px 20px; font-size:12px; font-weight:300; background:black; color:white; border:none; cursor:pointer; }
+        
+        @media (max-width: 640px) {
+          .fav-row { padding:12px 16px; gap:16px; }
+          .fav-image { flex-basis:44vw; width:44vw; aspect-ratio:4 / 5; }
+        }
