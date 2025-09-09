@@ -342,30 +342,6 @@ export default function FavoritesPage() {
         )}
       </div>
 
-      {/* Actions de sélection */}
-      {selectionMode && (
-        <div
-          className="selection-actions"
-          id="selectionActions"
-          style={{ display: selectedKeys.size > 0 ? "flex" : "none" }}
-        >
-          <button
-            id="btnAddToList"
-            onClick={() => setListModalOpen(true)}
-            disabled={selectedKeys.size === 0}
-          >
-            AJOUTER À LA LISTE
-          </button>
-          <button
-            id="btnDelete"
-            onClick={confirmDeleteSelected}
-            disabled={selectedKeys.size === 0}
-          >
-            SUPPRIMER
-          </button>
-        </div>
-      )}
-
       {/* Footer nav */}
       <footer className="sticky-footer">
         <Link href="/home" className="menu-item active">
