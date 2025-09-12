@@ -34,7 +34,7 @@ const REWARDS: Record<LevelKey, string[]> = {
     "Concepteurs exclusifs",
     "Service client prioritaire",
   ],
-  "client-prive": [
+  client-prive: [
     "Déverrouillage à partir de 12000$",
     "Récompense de bienvenue",
     "Accès anticipé à la vente",
