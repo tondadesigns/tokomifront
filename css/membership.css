@@ -1,0 +1,194 @@
+        html,
+        body {
+          min-height: 100vh;
+        }
+        body {
+          font-family: "Space Grotesk", sans-serif;
+          margin: 0;
+          padding-bottom: 120px;
+          background-color: #fff;
+          text-transform: uppercase;
+          width: 100vw;
+          overflow-x: hidden;
+          box-sizing: border-box;
+        }
+   
+        .hdr {
+          text-align: center;
+          padding: 24px 16px;
+          font-size: 14px;
+          font-weight: 500;
+          margin-top: 82px;
+          position: relative;
+        }
+
+        .btn-retour {
+          position: absolute;
+          left: 30px;
+          top: 124px;
+          color: black;
+          background: none;
+          border: none;
+          font-size: 26px;
+          font-weight: 300;
+          cursor: pointer;
+          font-family: "Space Grotesk", sans-serif;
+          text-decoration: none;
+        }
+
+        .page-title {
+          font-size: 30px;
+          font-weight: 600;
+          position: relative;
+          top: 60px;
+          text-align: center;
+          margin-top: 82px;
+          margin-bottom: 90px;
+        }
+
+        .membership-image {
+          width: calc(100% - 74px);
+          height: 600px;
+          object-fit: cover;
+          background-color: #ccc;
+          display: block;
+          margin: 0 auto;
+          margin-top: -16px;
+          margin-bottom: -26px;
+        }
+
+        .section {
+          padding: 24px 16px 10px;
+          margin-left: 20px;
+        }
+
+        .section h2 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-top: 8px;
+          margin-bottom: -8px;
+        }
+
+        .section h3 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-top: -26px;
+          margin-left: 32px;
+          margin-bottom: -8px;
+        }
+
+        .section h4 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-top: -4px;
+          margin-left: 0;
+          margin-bottom: 2px;
+        }
+
+        .section p {
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 1.6;
+          text-transform: none;
+          margin-top: 2px;
+          width: calc(100% - 82px);
+        }
+
+        /* Rewards */
+        .rewards-section {
+          margin-left: -12px;
+          width: 95%;
+          margin-bottom: -88px;
+        }
+
+        .rewards-carousel {
+          overflow: hidden;
+          width: 100%;
+          position: relative;
+          height: 420px;
+          margin-top: 12px;
+          margin-bottom: 100px;
+          margin-left: 15px;
+          box-sizing: border-box;
+        }
+
+        .carousel-track {
+          display: flex;
+          transition: transform 0.6s ease-in-out;
+        }
+
+        .reward-image {
+          width: calc(100% - 32px);
+          height: 260px;
+          object-fit: cover;
+          margin: 6px 16px;
+          border-radius: 0;
+          border: 1px solid black;
+          cursor: pointer;
+          transition: transform 0.3s ease;
+          flex-shrink: 0;
+        }
+
+        /* Modal */
+        .reward-modal {
+          position: absolute;
+          left: 35px;
+          right: 44px;
+          width: auto;
+          background-color: white;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          z-index: 1000;
+          opacity: 0;
+          transform: scaleY(0);
+          transform-origin: top;
+          transition: transform 0.3s ease, opacity 0.3s ease;
+          pointer-events: none;
+        }
+        .reward-modal.show {
+          transform: scaleY(1);
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .reward-modal-content {
+          padding: 20px;
+          font-size: 13px;
+        }
+        .close-button {
+          float: right;
+          font-size: 20px;
+          font-weight: 300;
+          cursor: pointer;
+          background: none;
+          border: none;
+        }
+        #modal-title {
+          font-size: 13px;
+          font-weight: 500;
+          margin-bottom: 12px;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+        }
+        #reward-list {
+          list-style: none;
+          padding-left: 0;
+          margin: 0;
+        }
+        #reward-list li {
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 1.7;
+          padding: 2px 0;
+        }
+
+        @media (max-width: 768px) {
+          .membership-image {
+            height: 360px;
+          }
+          .rewards-carousel {
+            height: 360px;
+          }
+          .reward-image {
+            height: 220px;
+          }
+        }
+      
