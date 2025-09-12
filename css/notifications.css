@@ -1,0 +1,88 @@
+
+        body {
+          background-color: #fff;
+          font-family: "Space Grotesk", sans-serif;
+        }
+        * {
+          box-sizing: border-box;
+        }
+      `}</style>
+
+      <style jsx>{`
+        .btn-retour {
+          position: absolute;
+          left: 10px;
+          top: 54px;
+          color: black;
+          background: none;
+          border: none;
+          font-size: 11px;
+          font-weight: 300;
+          cursor: pointer;
+          font-family: "Space Grotesk", sans-serif;
+        }
+
+        .title {
+          text-align: center;
+          margin-top: 120px;
+          font-size: 13px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+
+        .container {
+          margin-top: 38px;
+          padding: 40px 24px 40px;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        .notification-option {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-bottom: 12px;
+        }
+
+        .notification-label {
+          font-size: 11px;
+          font-weight: 300;
+          color: #333;
+          text-transform: uppercase;
+        }
+
+        .custom-radio-check {
+          width: 12px;
+          height: 12px;
+          border: 1px solid #333;
+          border-radius: 50%;
+          position: relative;
+          cursor: pointer;
+          display: inline-block;
+        }
+
+        .custom-radio-check::after {
+          content: "";
+          width: 6px;
+          height: 6px;
+          background-color: #000;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) scale(0);
+          transition: transform 0.2s ease;
+        }
+
+        /* hide native input but keep it for a11y */
+        input[type="checkbox"] {
+          display: none;
+        }
+
+        /* fill dot when checked */
+        #suivi:checked + .custom-radio-check::after,
+        #promos:checked + .custom-radio-check::after,
+        #alertes:checked + .custom-radio-check::after {
+          transform: translate(-50%, -50%) scale(1);
+        }
