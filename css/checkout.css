@@ -1,0 +1,101 @@
+        body {
+          font-family: "Space Grotesk", sans-serif;
+          margin: 0;
+          padding: 0;
+          background: white;
+        }
+        .header {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 22px 28px;
+        }
+        .btn-retourccp {
+          margin-top: 31px;
+          margin-left: -18px;
+          font-size: 12px;
+          font-weight: 300;
+          color: black;
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+        #checkout-date {
+          font-size: 12px;
+          font-weight: 300;
+          color: black;
+          margin: 0 16px;
+        }
+        #checkout-article-count {
+          font-size: 12px;
+          font-weight: 300;
+          margin: 12px 16px;
+        }
+        .carousel {
+          margin-top: -10px;
+          display: flex;
+          overflow-x: auto;
+          gap: 16px;
+          padding: 16px;
+        }
+        .carousel div {
+          width: 120px;
+          height: 180px;
+          background: #eee;
+        }
+        .address-header,
+        .payment-header,
+        .shipping-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 12px 16px;
+          font-size: 12px;
+          font-weight: 300;
+          cursor: pointer;
+        }
+        .address-header {
+          margin-bottom: 6px;
+        }
+        .payment-header {
+          margin-top: -4px;
+          margin-bottom: 32px;
+        }
+        .cart-footer {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          background: white;
+          z-index: 1000;
+          padding: 16px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-top: 1px solid #eee;
+          margin-top: 10px;
+        }
+        .continue-button {
+          width: 100%;
+          background: black;
+          color: white;
+          padding: 10px;
+          font-family: "Space Grotesk", sans-serif;
+          font-size: 12px;
+          font-weight: 300;
+          border: none;
+          cursor: pointer;
+        }
+        .cart-total {
+          font-size: 14px;
+          font-weight: 300;
+        }
+        .cart-note {
+          font-size: 12px;
+          color: #555;
+          font-weight: 300;
+        }
+        .cart-footer-left {
+          width: 40vw;
+        }
