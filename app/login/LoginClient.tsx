@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-export default function ConnexionClient() {
+export default function LoginClient() {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -51,7 +51,7 @@ export default function ConnexionClient() {
 
   return (
     <main>
-      <button className="btn-retour" onClick={() => router.push("/intro-utilisateur")} aria-label="Retour">
+      <button className="btn-retour" onClick={() => router.push("/user-intro")} aria-label="Retour">
         RETOUR
       </button>
 
@@ -86,7 +86,7 @@ export default function ConnexionClient() {
         </form>
 
         <div className="extra-links">
-          <a href="/motdepasseoublie">Mot de passe oublié ?</a>
+          <a href="/forgot-password">Mot de passe oublié ?</a>
         </div>
       </div>
 
