@@ -1,0 +1,23 @@
+        .wrap {
+          font-family: 'Space Grotesk', sans-serif;
+          padding: 64px 32px;
+          background: #fff;
+          color: #111;
+          text-align: center;
+        }
+        h1 {
+          font-size: 16px;
+          font-weight: 300;
+          margin-bottom: 24px;
+          text-transform: none;
+        }
+        button {
+          padding: 12px 24px;
+          background: #000;
+          color: #fff;
+          border: none;
+          font-size: 14px;
+          font-weight: 300;
+          cursor: pointer;
+          text-transform: uppercase;
+        }
