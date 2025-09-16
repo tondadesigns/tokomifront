@@ -1,0 +1,66 @@
+
+        * {
+          box-sizing: border-box;
+          font-family: 'Space Grotesk', sans-serif !important;
+        }
+        body, :global(html) {
+          background-color: #fff;
+        }
+        main {
+          margin: 0;
+          padding: 0;
+          text-transform: uppercase;
+        }
+        .btn-retour {
+          margin-left: 30px;
+          margin-top: 132px;
+          background: none;
+          border: none;
+          color: black;
+          font-size: 28px;
+          font-weight: 300;
+          cursor: pointer;
+          text-decoration: none;
+          display: inline-block;
+        }
+        header {
+          text-align: left;
+          padding: 80px 16px 24px;
+          font-size: 28px;
+          font-weight: 600;
+          margin-top: 12px;
+          margin-left: 20px;
+        }
+        .section {
+          padding: 24px 16px;
+          text-align: left;
+          margin-top: -32px;
+          margin-left: 20px;
+        }
+        .section p {
+          font-size: 22px;
+          font-weight: 300;
+          text-transform: none;
+          line-height: 1.5;
+          margin-top: -3px;
+          margin-bottom: 42px;
+        }
+        .btn-contact {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 8px;
+          font-size: 24px;
+          color: black;
+          font-weight: 300;
+          padding: 10px 0;
+          margin: 12px 0;
+          border: none;
+          background: none;
+          cursor: pointer;
+          text-decoration: none;
+        }
+        .btn-contact img {
+          width: 32px;
+          height: 32px;
+        }
