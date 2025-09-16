@@ -1,4 +1,4 @@
-// app/resultats/page.tsx
+
 import ResultsClient from "./ResultsClient";
 
 export const metadata = { title: "Résultats de recherche – Tokomi" };
