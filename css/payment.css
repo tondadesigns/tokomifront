@@ -1,0 +1,43 @@
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Space Grotesk', sans-serif; background: white; }
+        .payment-header-section { margin-bottom: 24px; }
+        .btn-retourpcp {
+          font-size: 12px; font-weight: 300; text-transform: uppercase;
+          background: none; border: none; color: black; cursor: pointer;
+          margin-top: 40px; margin-bottom: 12px;
+        }
+        .payment-heading { font-size: 12px; font-weight: 500; margin-left: 0; margin-bottom: -18px; }
+        .payment-grid {
+          display: flex; flex-direction: column; gap: 12px; margin-top: -4px;
+          max-width: 700px; margin: 32px auto;
+        }
+        .payment-row { display: flex; flex-direction: column; gap: 6px; border-bottom: 1px solid white; margin-bottom: -20px; }
+        .payment-button {
+          display: flex; align-items: center; gap: 16px; padding: 12px;
+          background: white; border: none; cursor: pointer; font-size: 12px; color: black; text-transform: uppercase;
+        }
+        .payment-logo { width: 40px; height: 28px; display: flex; align-items: center; justify-content: center; }
+        .payment-logo img { max-height: 100%; max-width: 100%; object-fit: contain; }
+        .visa-logo { height: 12px !important; width: auto; object-fit: contain; }
+        .mastercard-logo { height: 24px !important; width: auto; object-fit: contain; }
+        .paypal-logo { height: 20px !important; width: auto; object-fit: contain; }
+        .americanexpress-logo { height: 28px; width: auto; }
+        .applepay-logo { height: 20px !important; width: auto; object-fit: contain; }
+        .taptapsend-logo { height: 24px !important; width: auto; object-fit: contain; }
+        .mpesa-logo { height: 22px !important; width: auto; object-fit: contain; }
+        .illicocash-logo { height: 48px !important; width: auto !important; object-fit: contain; }
+        .orangemoney-logo { height: 23px !important; width: auto; object-fit: contain; }
+        .airtelmoney-logo { height: 22px !important; width: auto; object-fit: contain; }
+        .afrimoney-logo { height: 22px !important; width: auto; object-fit: contain; }
+        .mtnmomo-logo { height: 22px !important; width: auto; object-fit: contain; }
+        .payment-dropdown { display: none; flex-direction: column; gap: 16px; padding: 16px; background: white; }
+        .payment-dropdown.show { display: flex; }
+        .payment-input {
+          width: 100%; padding: 12px 0; border: none; border-bottom: 1px solid #eee;
+          font-size: 13px; font-weight: 300; outline: none; text-transform: uppercase;
+        }
+        .validate-button {
+          width: 100%; padding: 16px; background: black; color: white; border: none;
+          font-size: 13px; text-transform: uppercase; cursor: pointer;
+        }
