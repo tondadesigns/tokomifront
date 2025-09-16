@@ -1,0 +1,95 @@
+
+        .page {
+          font-family: 'Space Grotesk', sans-serif;
+          font-weight: 300;
+          padding: 32px;
+          background: #fff;
+          color: #111;
+        }
+        .logoHeader {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 20px 0;
+        }
+        .logo {
+          height: 60px;
+          width: auto;
+        }
+        h1 {
+          text-align: center;
+          font-size: 32px;
+          font-weight: 600;
+          margin-top: 120px;
+          margin-bottom: 142px;
+        }
+        .section {
+          margin-bottom: 30px;
+        }
+        .label {
+          font-size: 26px;
+          font-weight: 600;
+          margin-bottom: 8px;
+          text-transform: uppercase;
+        }
+        .value {
+          font-size: 22px;
+          font-weight: 300;
+          text-transform: none;
+          margin-bottom: 18px;
+        }
+        /* blocs spécifiques */
+        :global(.section:nth-of-type(2) .value) {
+          text-transform: none;
+          margin-top: 0;
+          margin-bottom: 40px;
+        }
+        :global(.section:nth-of-type(3) .value) {
+          margin-bottom: 40px;
+        }
+
+        .summary {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 8px;
+          font-size: 29px;
+          font-weight: 300;
+          text-transform: none;
+        }
+        .summary span:first-child {
+          text-transform: lowercase;
+        }
+        .summary span:first-child::first-letter {
+          text-transform: uppercase;
+        }
+        .total {
+          border-top: 1px solid #ddd;
+          padding-top: 8px;
+          font-size: 30px;
+          font-weight: 600;
+          text-transform: uppercase !important;
+        }
+
+        /* estimated-date : minuscule avec 1re lettre majuscule */
+        #estimated-date {
+          text-transform: lowercase;
+        }
+        #estimated-date::first-letter {
+          text-transform: uppercase;
+        }
+
+        .backWrap {
+          text-align: center;
+          margin-top: 180px;
+          margin-bottom: 20px;
+        }
+        .homeBtn {
+          padding: 32px 56px;
+          font-size: 24px;
+          background: #000;
+          color: #fff;
+          border: none;
+          border-radius: 0;
+          cursor: pointer;
+          text-transform: uppercase;
+        }
