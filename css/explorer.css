@@ -61,7 +61,7 @@ html, body {
         .category-title { text-decoration: none; color: #111; font-size: 13px; font-weight: 600; margin-bottom: 0 !important; }
         .category-list { display: flex; flex-direction: column; padding: 10px 16px; margin-top: 0 !important; margin-bottom: 2px !important; }
         .category-item { display: block; padding: 2px 0; color: #111; text-decoration: none; font-size: 12px; font-weight: 300; margin-bottom: 2px !important; }
-        .product-carousel-section { margin-top: 0 !important; padding-top: 0 !important; border-bottom: 1px solid red; margin-bottom: 0 !important; }
+        .product-carousel-section { margin-top: 0 !important; padding-top: 0 !important; border-bottom: 1px solid white; margin-bottom: 0 !important; }
         .section-header { display: flex; justify-content: space-between; align-items: center; padding: 0 16px 12px; margin-top: -22px; margin-bottom: -6px; }
         .section-title { margin-top: -12px; margin-left: 1px; font-size: 13px; font-weight: 600; margin-bottom: 2px; color: #111; text-decoration: none; }
         .carousel { display: flex; gap: 8px; margin-left: 14px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; margin-bottom: 12px !important; padding-bottom: 0 !important; }
