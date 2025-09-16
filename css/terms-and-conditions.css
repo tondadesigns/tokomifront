@@ -1,0 +1,46 @@
+        body,
+        main {
+          background: #fff;
+        }
+        main {
+          font-family: "Space Grotesk", sans-serif;
+          text-transform: none;
+          color: #222;
+          line-height: 1.6;
+          font-size: 12px;
+        }
+        .btn-retour {
+          margin-left: 30px;
+          margin-top: 132px;
+          background: none;
+          border: none;
+          color: black;
+          font-size: 28px;
+          font-weight: 300;
+          cursor: pointer;
+          text-decoration: none;
+          display: inline-block;
+        }
+        header {
+          padding: 80px 16px 24px;
+          font-size: 28px;
+          font-weight: 600;
+          text-align: center;
+          margin-top: 12px;
+          text-transform: uppercase;
+        }
+        .content {
+          padding: 8px 40px;
+        }
+        .content h2 {
+          font-size: 28px;
+          font-weight: 600;
+          text-transform: uppercase;
+          margin-top: 24px;
+          margin-bottom: 8px;
+        }
+        .content p {
+          margin-bottom: 26px;
+          font-weight: 300;
+          font-size: 22px;
+        }
