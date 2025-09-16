@@ -9,7 +9,7 @@ export default function LoadingPage() {
   useEffect(() => {
     const t = setTimeout(() => {
       const success = Math.random() > 0.3; // ~70% succès
-      router.push(success ? "/checkout/confirmation" : "/checkout/echec");
+      router.push(success ? "/checkout/success" : "/checkout/failure");
       // Ajuste les routes ci-dessus si tes pages s'appellent autrement.
     }, 3000);
 
