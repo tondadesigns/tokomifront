@@ -1,17 +1,17 @@
 import React from "react";
 
 interface ButtonProps {
-    label: string;
     customClass?: string;
+    handleClick?: () => void;
+    children?: React.ReactNode;
 }
 
-export const Button = ({label, customClass}: ButtonProps) => {
+export const Button = ({children, customClass, handleClick}: ButtonProps) => {
     const baseButtonClass =
-        "bg-white text-black text-[22px] uppercase p-5 border border-transparent cursor-pointer my-2 w-3/5 transition-colors duration-300 ease-in-out hover:bg-black hover:border hover:text-white hover:border-white";
-
+        "cursor-pointer select-none font-medium text-center transition-all duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:cursor-not-allowed data-[shape=pill]:rounded-full data-[width=full]:w-full focus:shadow-none text-sm rounded-md py-2 px-4 shadow-sm hover:shadow-md bg-slate-200 border-slate-200 text-slate-800 hover:text-white hover:bg-black";
     return (
-        <button className={customClass ?? baseButtonClass}>
-            {label}
+        <button className={`${baseButtonClass} ${customClass}`} onClick={handleClick} data-shape="default">
+            {children}
         </button>
     );
 

@@ -2,9 +2,9 @@
 
 @layer base {
     html, body {
-        @apply m-0 p-0 bg-black overflow-hidden h-screen;
+        @apply m-0 p-0;
     }
     body {
-        @apply flex items-center justify-center font-[Space_Grotesk,sans-serif];
+        @apply font-[Space_Grotesk,sans-serif];
     }
 }
