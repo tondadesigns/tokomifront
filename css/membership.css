@@ -46,6 +46,33 @@
           margin-bottom: 90px;
         }
 
+         .user-membership {
+          position: absolute;
+          left: 36px;
+          top: 178px;
+          font-family: 'Space Grotesk', sans-serif;
+          text-transform: none;
+          color: #000;
+          margin-top: 6px;
+        }
+        .user-line {
+          font-size: 26px;
+          font-weight: 400;
+          letter-spacing: 0.3px;
+          margin-bottom: 4px;
+          text-transform: uppercase;
+          white-space: nowrap; /* évite le retour à la ligne */
+        }
+        #user-tier { font-weight: 600; }
+        .user-points {
+          font-size: 25px;
+          font-weight: 300;
+          letter-spacing: 0.2px;
+          text-transform: uppercase;
+          margin-left: 8px;  /* léger décalage à droite, stable */
+          margin-top: 8px;   /* espace constant sous la ligne du nom */
+        }
+        
         .membership-image {
           width: calc(100% - 74px);
           height: 600px;
