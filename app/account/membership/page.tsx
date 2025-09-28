@@ -49,11 +49,11 @@ const REWARDS: Record<LevelKey, string[]> = {
 };
 
 const SLIDES: { src: string; alt: string; key: LevelKey }[] = [
-  { src: "/bronze.jpg", alt: "Bronze", key: "bronze" },
-  { src: "/argent.jpg", alt: "Argent", key: "argent" },
-  { src: "/or.jpg", alt: "Or", key: "or" },
-  { src: "/platine.jpg", alt: "Platine", key: "platine" },
-  { src: "/client-prive.jpg", alt: "Client privé", key: "client-prive" },
+  { src: "/bronze-badge-rect.svg", alt: "Bronze", key: "bronze" },
+  { src: "/argent-badge-rect.svg", alt: "Argent", key: "argent" },
+  { src: "/or-badge-rect.svg", alt: "Or", key: "or" },
+  { src: "/platine-badge-rect.svg", alt: "Platine", key: "platine" },
+  { src: "/client-prive-badge-rect.svg", alt: "Client privé", key: "client-prive" },
 ];
 
 // ---------- Helpers localStorage ----------
