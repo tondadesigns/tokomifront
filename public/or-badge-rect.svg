@@ -1,0 +1,28 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgOr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE680"/>
+      <stop offset="60%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#9A7B20"/>
+    </linearGradient>
+    <linearGradient id="rimOr" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFF4B3"/>
+      <stop offset="100%" stop-color="#8A6D1B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="#ffffff"/>
+  <rect x="80" y="90" width="1440" height="720" rx="48" fill="url(#bgOr)"/>
+  <rect x="80" y="90" width="1440" height="720" rx="48" fill="none" stroke="url(#rimOr)" stroke-width="16"/>
+  <rect x="112" y="122" width="1376" height="656" rx="40" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="6"/>
+
+  <!-- colored star -->
+  <g transform="translate(280,320)" fill="#D4AF37" opacity="0.96">
+    <path d="M0,-55 L16,-10 L64,-10 L24,16 L38,60 L0,34 L-38,60 L-24,16 L-64,-10 L-16,-10 Z"/>
+  </g>
+
+  <g font-family="Space Grotesk, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" fill="#ffffff">
+    <text x="320" y="520" font-size="120" font-weight="600" letter-spacing="12">OR</text>
+    <text x="320" y="570" font-size="34" font-weight="400" letter-spacing="4" opacity="0.97">TOKOMI MEMBERSHIP</text>
+  </g>
+</svg>
